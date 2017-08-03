@@ -11,13 +11,23 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        echo 'test thing';
                 
         foreach ($_REQUEST as $x)
         {
-            echo  $x;
+            echo  $x ;
+            echo "<br>";
         }
-        echo 'hello world';
+
+
+        $data = $_REQUEST["request"];
+        $offest = $_REQUEST["offset"];
+        $limit = $_REQUEST['limit'];
+        echo '<br>test';
+        echo $data;
+        echo '<br>test';
+        echo $offest;
+        echo $limit;
+        
         ?>
     </body>
 </html>
